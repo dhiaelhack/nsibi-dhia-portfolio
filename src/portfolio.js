@@ -23,7 +23,7 @@ const greeting = {
   username: "Dhia Elhack Nsibi",
   title: "Hi all, I'm Dhia",
   subTitle: emoji(
-    "An Engineering student specializing in Embedded Telecommunications 🚀, passionate about Networks, Cybersecurity & AI. I love designing secure systems, building AI-driven solutions, and connecting the physical and digital worlds. Currently seeking a 4–6 month Final-Year Internship (PFE) from October 2026."
+    "Engineering student in Telecommunications dedicated to Network DevOps & Full-Stack Web Development 🚀. Passionate about building full-stack applications, automating CI/CD pipelines, and streamlining network operations. Currently seeking a 4–6 month Final-Year Internship (PFE) starting October 2026."
   ),
   resumeLink: process.env.PUBLIC_URL + "/Resume.pdf", // served from the public/ folder
   displayGreeting: true // Set false to hide this section, defaults to true
