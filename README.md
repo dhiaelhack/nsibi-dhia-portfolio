@@ -1,59 +1,82 @@
 # Nsibi Dhia Elhack — Portfolio 🚀
 
-> Personal developer portfolio showcasing my projects, technical skills, education, experience, certifications, and achievements.
+> Personal portfolio of **Nsibi Dhia Elhack**, an Engineering student in Telecommunications focused on **Network DevOps, Full-Stack Web Development, and modern software technologies**.
 
-🌐 **Live Portfolio:** [Add your portfolio URL here]
-💼 **LinkedIn:** [Add your LinkedIn URL here]
-🐙 **GitHub:** [Add your GitHub URL here]
-
----
-
-## 👨‍💻 About
-
-Hi, I'm **Nsibi Dhia Elhack**, an engineering student and aspiring software developer interested in software engineering, artificial intelligence, cybersecurity, data, and modern web technologies.
-
-This portfolio was built to showcase my academic journey, technical projects, professional experiences, and the technologies I work with.
+🌐 **Portfolio:** https://nsibi-dhia-portfolio.vercel.app/  
+💼 **LinkedIn:** https://www.linkedin.com/in/nsibi-dhia-elhack-01290b245/  
+🐙 **GitHub:** https://github.com/dhiaelhack
 
 ---
 
-## ✨ Features
+## 👨‍💻 About Me
 
-* 👋 Personal introduction
-* 🛠️ Technical skills and technologies
-* 🎓 Education
-* 💼 Professional experience
-* 🚀 Featured projects
-* 🏆 Certifications and achievements
-* 📄 Resume
-* 📬 Contact information
-* 🌙 Dark / light mode
-* 📱 Responsive design
-* 🔗 GitHub and LinkedIn integration
+Hi, I'm **Nsibi Dhia Elhack**, an Engineering student in Telecommunications passionate about building reliable software systems, full-stack applications, and automated infrastructure.
+
+My current technical interests focus on:
+
+- 🌐 Network DevOps
+- 💻 Full-Stack Web Development
+- ⚙️ CI/CD & DevOps automation
+- 🔐 Cybersecurity
+- 🤖 Artificial Intelligence
+- 📡 Telecommunications & Networks
+
+I enjoy combining software development with networking and automation to build practical, scalable, and secure solutions.
+
+🎯 **Currently seeking a 4–6 month Final-Year Internship (PFE) starting October 2026.**
+
+---
+
+## ✨ Portfolio Features
+
+- 👋 Personal introduction
+- 🛠️ Technical skills
+- 🎓 Education
+- 💼 Professional experience
+- 🚀 Featured projects
+- 🏆 Certifications & achievements
+- 📄 Resume
+- 📬 Contact section
+- 🌙 Dark / light mode
+- 📱 Responsive design
+- 🔗 GitHub & LinkedIn integration
 
 ---
 
 ## 🛠️ Technologies
 
-### Frontend
+### 💻 Development
 
-* React
-* JavaScript
-* HTML5
-* SCSS / CSS
+- React
+- JavaScript
+- HTML5
+- CSS / SCSS
+- REST APIs
+- GraphQL
+- Apollo
 
-### Tools & APIs
+### ⚙️ DevOps & Tools
 
-* Git
-* GitHub
-* GraphQL
-* Apollo
-* REST APIs
+- Git
+- GitHub
+- Docker
+- GitHub Actions
+- CI/CD
+- GitHub Pages
 
-### Other
+### 🌐 Networking & Infrastructure
 
-* Docker
-* GitHub Actions
-* GitHub Pages
+- Computer Networks
+- Network Administration
+- Network Automation
+- Telecommunications
+- DevOps
+
+### 🤖 Other Areas
+
+- Artificial Intelligence
+- Cybersecurity
+- Automation
 
 ---
 
@@ -63,118 +86,13 @@ This portfolio was built to showcase my academic journey, technical projects, pr
 
 Make sure you have installed:
 
-* Node.js
-* npm
-* Git
+- [Node.js](https://nodejs.org/)
+- npm
+- Git
 
 ### Installation
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/nsibi-dhia-portfolio.git
-```
-
-Go to the project directory:
-
-```bash
-cd nsibi-dhia-portfolio
-```
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Start the development server:
-
-```bash
-npm start
-```
-
-The portfolio will then be available locally at:
-
-```text
-http://localhost:3000
-```
-
----
-
-## ⚙️ Customization
-
-The portfolio content can be customized from:
-
-```text
-src/portfolio.js
-```
-
-Global colors can be customized from:
-
-```text
-src/_globalColor.scss
-```
-
-Additional UI components and sections can be modified inside:
-
-```text
-src/
-```
-
----
-
-## 📄 Resume
-
-My resume is available directly from the portfolio.
-
-The resume file can be placed in:
-
-```text
-src/containers/greeting/resume/
-```
-
----
-
-## 🌐 Deployment
-
-The portfolio can be deployed using platforms such as:
-
-* GitHub Pages
-* Netlify
-* Vercel
-
----
-
-## 🙏 Credits
-
-This portfolio was originally based on **developerFolio**, an open-source portfolio template created by Saad Pasta and contributors.
-
-I have significantly customized the original project, including the content, personal information, styling, configuration, portfolio sections, and other elements to create my own personal portfolio.
-
-Original project:
-
-https://github.com/saadpasta/developerFolio
-
----
-
-## 📜 License
-
-This project retains the license of the original developerFolio project.
-
-See the `LICENSE` file for the applicable license terms.
-
----
-
-## 📬 Contact
-
-If you'd like to connect or discuss a project, feel free to reach out.
-
-**Nsibi Dhia Elhack**
-
-* GitHub: [Your GitHub]
-* LinkedIn: [Your LinkedIn]
-* Email: [Your Email]
-
----
-
-⭐ If you find this portfolio useful or interesting, feel free to explore the repository.
+git clone https://github.com/dhiaelhack/nsibi-dhia-portfolio.git
