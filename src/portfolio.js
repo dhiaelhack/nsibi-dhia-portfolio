@@ -23,7 +23,7 @@ const greeting = {
   username: "Dhia Elhack Nsibi",
   title: "Hi all, I'm Dhia",
   subTitle: emoji(
-    "Engineering student in Telecommunications dedicated to Network DevOps & Full-Stack Web Development 🚀. Passionate about building full-stack applications, automating CI/CD pipelines, and streamlining network operations. Currently seeking a 4–6 month Final-Year Internship (PFE) starting October 2026."
+    "Engineering student in Telecommunications passionate about Java / Full Stack development, CI/CD automation, and Linux systems 🚀. Building robust applications, automating pipelines, and turning complex problems into clean software. Currently seeking a 6-month Final-Year Internship (PFE) starting February 2027."
   ),
   resumeLink: process.env.PUBLIC_URL + "/Resume.pdf", // served from the public/ folder
   displayGreeting: true // Set false to hide this section, defaults to true
@@ -45,22 +45,22 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "ENGINEERING STUDENT FOCUSED ON NETWORKS, CYBERSECURITY & AI-DRIVEN SYSTEMS",
+    "ENGINEERING STUDENT FOCUSED ON JAVA / FULL STACK DEVELOPMENT, CI/CD & LINUX SYSTEMS",
   skills: [
     emoji(
-      "⚡ Design and evaluate network security monitoring platforms with vulnerability scanning and anomaly detection"
+      "⚡ Build full-stack applications with Java, Angular, Node.js and modern web frameworks"
     ),
     emoji(
-      "⚡ Build AI-powered applications, including RAG-based assistants and computer vision pipelines"
+      "⚡ Develop and automate secure CI/CD pipelines with GitLab CI, Docker, SonarQube and OWASP ZAP"
     ),
     emoji(
-      "⚡ Design and emulate enterprise network architectures (MPLS/VPN, OSPF, BGP)"
+      "⚡ Design and implement Linux/POSIX systems programming — shells, IPC, process management"
     ),
     emoji(
-      "⚡ Develop secure DevSecOps CI/CD pipelines with automated code quality and security scanning"
+      "⚡ Design and emulate enterprise network architectures (MPLS/VPN, OSPF, BGP) and security monitoring platforms"
     ),
     emoji(
-      "⚡ Build embedded systems projects spanning GSM/GPS tracking, solar tracking, and IoT"
+      "⚡ Build AI-powered applications including RAG-based assistants and computer vision pipelines"
     )
   ],
 
@@ -68,6 +68,10 @@ const skillsSection = {
 https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
+    {
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
+    },
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
@@ -77,20 +81,36 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-code"
     },
     {
-      skillName: "java",
-      fontAwesomeClassname: "fab fa-java"
-    },
-    {
       skillName: "javascript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs / angular",
+      skillName: "typescript",
+      fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "angular",
+      fontAwesomeClassname: "fab fa-angular"
+    },
+    {
+      skillName: "reactjs",
       fontAwesomeClassname: "fab fa-react"
     },
     {
-      skillName: "nodejs",
+      skillName: "nodejs / express",
       fontAwesomeClassname: "fab fa-node"
+    },
+    {
+      skillName: "html5",
+      fontAwesomeClassname: "fab fa-html5"
+    },
+    {
+      skillName: "css3 / sass",
+      fontAwesomeClassname: "fab fa-sass"
+    },
+    {
+      skillName: "figma",
+      fontAwesomeClassname: "fab fa-figma"
     },
     {
       skillName: "docker",
@@ -105,7 +125,7 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fab fa-gitlab"
     },
     {
-      skillName: "linux",
+      skillName: "linux / bash",
       fontAwesomeClassname: "fab fa-linux"
     },
     {
@@ -155,16 +175,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Networks & Cybersecurity", //Insert stack or technology you have experience in
-      progressPercentage: "85%" //Insert relative proficiency in percentage
+      Stack: "Full Stack Development (Java / JS / Angular)", //Insert stack or technology you have experience in
+      progressPercentage: "80%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "AI / Machine Learning",
+      Stack: "DevOps & CI/CD (GitLab CI, Docker, SonarQube)",
+      progressPercentage: "80%"
+    },
+    {
+      Stack: "Networks, Systems & Cybersecurity",
       progressPercentage: "75%"
-    },
-    {
-      Stack: "Embedded Systems & IoT",
-      progressPercentage: "70%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section, defaults to false
@@ -258,6 +278,15 @@ const bigProjects = {
         "Developed a full-stack platform with an automated GitLab CI/Docker pipeline integrating SonarQube and OWASP ZAP for code quality and security-risk assessment.",
       footerLink: [
         { name: "GitLab", url: "https://gitlab.com/nsibidhiaelhack" }
+      ]
+    },
+    {
+      image: require("./assets/images/LAS-Shell.jpg"),
+      projectName: "LAS Shell — POSIX Unix Shell in C",
+      projectDesc:
+        "Implemented a POSIX-compliant Unix shell in C under Linux: process management, IPC, pipelines, I/O redirection, signals, background jobs, command history and aliases.",
+      footerLink: [
+        { name: "GitHub", url: "https://github.com/dhiaelhack" }
       ]
     },
     {
@@ -362,7 +391,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Looking for a 4–6 month Final-Year Internship (PFE) from October 2026 in Networks, Cybersecurity or AI. Feel free to reach out!",
+    "Looking for a 6-month Final-Year Internship (PFE) from February 2027 in Java / Full Stack Development or CI-CD. Feel free to reach out!",
   number: "",
   email_address: "nsibidhiaelhack@gmail.com"
 };
