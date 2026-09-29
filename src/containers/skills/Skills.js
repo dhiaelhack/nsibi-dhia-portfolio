@@ -6,6 +6,23 @@ import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 
+function renderSkill(skill) {
+  if (typeof skill !== "string") {
+    return skill;
+  }
+
+  return skill.split(/(\*\*.*?\*\*)/g).map((part, index) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return (
+        <strong key={index} className="skill-emphasis">
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    return part;
+  });
+}
+
 export default function Skills() {
   if (!skillsSection.display) {
     return null;
@@ -33,26 +50,14 @@ export default function Skills() {
             </p>
             <SoftwareSkill />
             <div>
-              {skillsSection.skills.map((skills, i) => {
-                const parts = skills
-                  .split(/(\*\*.*?\*\*)/g)
-                  .map((part, index) => {
-                    if (part.startsWith("**") && part.endsWith("**")) {
-                      return (
-                        <strong key={index} className="skill-emphasis">
-                          {part.slice(2, -2)}
-                        </strong>
-                      );
-                    }
-                    return part;
-                  });
+              {skillsSection.skills.map((skill, i) => {
                 return (
                   <p
                     key={i}
                     className="subTitle skills-text glassmorphism"
                     style={{padding: "15px", marginBottom: "10px"}}
                   >
-                    {parts}
+                    {renderSkill(skill)}
                   </p>
                 );
               })}
