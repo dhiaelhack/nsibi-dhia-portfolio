@@ -27,7 +27,8 @@
   justify-content: center;
   color: $textColor;
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  transition: box-shadow 180ms ease, border-color 180ms ease, transform 180ms ease;
+  transition: box-shadow 180ms ease, border-color 180ms ease,
+    transform 180ms ease;
 }
 
 .project-detail {
@@ -53,7 +54,8 @@
   background: transparent;
   color: $textColor;
   cursor: pointer;
-  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+  transition: color 180ms ease, background-color 180ms ease,
+    border-color 180ms ease, transform 180ms ease;
 }
 
 .project-filter:hover,

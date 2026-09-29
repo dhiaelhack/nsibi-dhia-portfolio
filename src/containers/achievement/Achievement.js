@@ -12,14 +12,10 @@ export default function Achievement() {
       <div className="main" id="achievements">
         <div className="achievement-main-div">
           <div className="achievement-header">
-            <h1
-              className="heading achievement-heading"
-            >
+            <h1 className="heading achievement-heading">
               {achievementSection.title}
             </h1>
-            <p
-              className="subTitle achievement-subtitle"
-            >
+            <p className="subTitle achievement-subtitle">
               {achievementSection.subtitle}
             </p>
           </div>

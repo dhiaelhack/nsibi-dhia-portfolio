@@ -36,10 +36,7 @@ function Header() {
           id="menu-btn"
           aria-label="Toggle navigation menu"
         />
-        <label
-          className="menu-icon"
-          htmlFor="menu-btn"
-        >
+        <label className="menu-icon" htmlFor="menu-btn">
           <span className="navicon"></span>
         </label>
         <ul className="menu">

@@ -49,8 +49,14 @@ $darkBoxShadow: var(--shadow-color);
 $darkBoxShadow2: var(--bg-raised);
 
 // linear gradients (Glassmorphic)
-$experienceCardBlurredDivLG: linear-gradient(rgba(19, 31, 45, 0.78), rgba(19, 31, 45, 0.35));
-$experienceCardBannerLG: linear-gradient(rgba(19, 31, 45, 0.9), rgba(19, 31, 45, 0.58));
+$experienceCardBlurredDivLG: linear-gradient(
+  rgba(19, 31, 45, 0.78),
+  rgba(19, 31, 45, 0.35)
+);
+$experienceCardBannerLG: linear-gradient(
+  rgba(19, 31, 45, 0.9),
+  rgba(19, 31, 45, 0.58)
+);
 
 // borders
 $progressBarBackground: var(--bg-raised);
@@ -75,11 +81,11 @@ $appLink: var(--link);
 // social media icons
 $faceBook: #3b5998;
 $linkedin: #0ea5e9;
-$github: #F8FAFC;
+$github: #f8fafc;
 $gitlab: #0ea5e9;
 $google: #ea4335;
 $twitter: #1da1f2;
-$medium: #F8FAFC;
+$medium: #f8fafc;
 $stackoverflow: #f48024;
 $instagram: #c13584;
 $kaggle: #20beff;

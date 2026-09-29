@@ -5,11 +5,7 @@ export default function TalkCard({talkDetails}) {
   return (
     <div>
       <div className="container">
-        <div
-          className={
-            "rectangle"
-          }
-        >
+        <div className={"rectangle"}>
           <div className="diagonal-fill"></div>
           <div className="talk-card-title">{talkDetails.title}</div>
           <p className="talk-card-subtitle">{talkDetails.subtitle}</p>

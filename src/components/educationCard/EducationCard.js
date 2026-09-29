@@ -35,12 +35,8 @@ export default function EducationCard({school}) {
             <h5 className="education-text-school">{school.schoolName}</h5>
 
             <div className="education-text-details">
-              <h5 className="education-text-subHeader">
-                {school.subHeader}
-              </h5>
-              <p className="education-text-duration">
-                {school.duration}
-              </p>
+              <h5 className="education-text-subHeader">{school.subHeader}</h5>
+              <p className="education-text-duration">{school.duration}</p>
               <p className="education-text-desc">{school.desc}</p>
               <div className="education-text-bullets">
                 <ul>

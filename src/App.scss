@@ -22,7 +22,8 @@
   border: 1px solid var(--glass-border);
   box-shadow: var(--shadow);
   border-radius: 16px;
-  transition: background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+  transition: background-color 180ms ease, border-color 180ms ease,
+    box-shadow 180ms ease, transform 180ms ease;
 }
 
 .glassmorphism:hover {

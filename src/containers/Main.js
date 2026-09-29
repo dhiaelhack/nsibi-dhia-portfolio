@@ -44,7 +44,11 @@ const Main = () => {
     setIsDark(!isDark);
   };
 
-  const fallbackLoader = <div className="section-loader"><span>Loading...</span></div>;
+  const fallbackLoader = (
+    <div className="section-loader">
+      <span>Loading...</span>
+    </div>
+  );
 
   return (
     <div className={isDark ? "app-shell theme-dark" : "app-shell theme-light"}>

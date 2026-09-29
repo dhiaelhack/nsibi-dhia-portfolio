@@ -10,10 +10,19 @@ export default function StartupProject() {
     return null;
   }
 
-  const categories = ["All", "Web", "DevSecOps", "AI", "Networking", "Hardware"];
+  const categories = [
+    "All",
+    "Web",
+    "DevSecOps",
+    "AI",
+    "Networking",
+    "Hardware"
+  ];
 
-  const filteredProjects = bigProjects.projects.filter(project =>
-    filter === "All" || (project.category && project.category.includes(filter))
+  const filteredProjects = bigProjects.projects.filter(
+    project =>
+      filter === "All" ||
+      (project.category && project.category.includes(filter))
   );
 
   return (
@@ -21,18 +30,20 @@ export default function StartupProject() {
       <div className="main" id="projects">
         <div>
           <h1 className="skills-heading">{bigProjects.title}</h1>
-          <p
-            className="subTitle project-subtitle"
-          >
-            {bigProjects.subtitle}
-          </p>
+          <p className="subTitle project-subtitle">{bigProjects.subtitle}</p>
 
-          <div className="project-filters" role="group" aria-label="Filter projects by category">
-            {categories.map((cat) => (
+          <div
+            className="project-filters"
+            role="group"
+            aria-label="Filter projects by category"
+          >
+            {categories.map(cat => (
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
-                className={`project-filter${filter === cat ? " is-active" : ""}`}
+                className={`project-filter${
+                  filter === cat ? " is-active" : ""
+                }`}
                 aria-pressed={filter === cat}
               >
                 {cat}
@@ -46,7 +57,11 @@ export default function StartupProject() {
                 <div
                   key={i}
                   className="project-card glassmorphism"
-                  style={{margin: '0', display: 'flex', flexDirection: 'column'}}
+                  style={{
+                    margin: "0",
+                    display: "flex",
+                    flexDirection: "column"
+                  }}
                 >
                   {project.image ? (
                     <div className="project-image">
@@ -57,14 +72,12 @@ export default function StartupProject() {
                       ></img>
                     </div>
                   ) : null}
-                  <div className="project-detail" style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
-                    <h5 className="card-title">
-                      {project.projectName}
-                    </h5>
-                    <p
-                      className="card-subtitle"
-                      style={{flex: 1}}
-                    >
+                  <div
+                    className="project-detail"
+                    style={{flex: 1, display: "flex", flexDirection: "column"}}
+                  >
+                    <h5 className="card-title">{project.projectName}</h5>
+                    <p className="card-subtitle" style={{flex: 1}}>
                       {project.projectDesc}
                     </p>
                     {project.footerLink ? (

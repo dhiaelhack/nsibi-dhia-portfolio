@@ -11,9 +11,7 @@ export default function Footer() {
           {emoji("Made with ❤️ by Nsibi Dhia Elhack")}
         </p>
 
-        <p className="footer-text">
-          Designed & developed by Nsibi Dhia Elhack
-        </p>
+        <p className="footer-text">Designed & developed by Nsibi Dhia Elhack</p>
       </div>
     </Fade>
   );
