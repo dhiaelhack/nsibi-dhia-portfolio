@@ -1,7 +1,7 @@
 import React from "react";
 import "./Button.scss";
 
-export default function Button({text, className, href, newTab}) {
+export default function Button({text, className, href, newTab, download}) {
   return (
     <div className={className}>
       <a
@@ -9,6 +9,7 @@ export default function Button({text, className, href, newTab}) {
         href={href}
         target={newTab ? "_blank" : undefined}
         rel={newTab ? "noopener noreferrer" : undefined}
+        download={download}
       >
         {text}
       </a>

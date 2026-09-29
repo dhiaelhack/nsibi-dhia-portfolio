@@ -135,6 +135,24 @@
 }
 
 @media (max-width: 768px) {
+  .experience-banner {
+    height: 10rem;
+  }
+  .experience-roundedimg {
+    top: 6rem;
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+  .experience-text-company {
+    padding: 1rem;
+    white-space: normal;
+    text-overflow: clip;
+    overflow-wrap: anywhere;
+  }
+  .experience-text-details {
+    margin-top: 2rem;
+    padding: 1.25rem;
+  }
   .experience-text-role {
     font-size: 22px;
   }

@@ -15,6 +15,8 @@
 
 .greeting-main {
   display: flex;
+  align-items: center;
+  gap: clamp(24px, 5vw, 72px);
 }
 
 .subTitle {
@@ -23,7 +25,13 @@
 
 .greeting-main > * {
   flex: 1;
-  margin-bottom: 30px;
+  min-width: 0;
+}
+
+.greeting-image-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .empty-div {
@@ -31,11 +39,28 @@
 }
 
 .button-greeting-div {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  max-width: 456px;
+  gap: 16px;
   margin-top: 40px;
 }
-.download-link-button {
-  text-decoration: none;
+
+.button-greeting-div .greeting-action {
+  width: 100%;
+}
+
+.button-greeting-div .greeting-action .main-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 100%;
+  height: 56px;
+  line-height: 1.2;
+  text-align: center;
+  margin: 0;
 }
 
 .greeting-text {
@@ -139,10 +164,22 @@
 }
 @media (max-width: 768px) {
   .button-greeting-div {
-    justify-content: space-around;
+    grid-template-columns: 1fr;
+    max-width: 280px;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 12px;
+    margin-top: 24px;
+  }
+  .button-greeting-div .greeting-action {
+    width: 100%;
+    margin: 0;
+  }
+  .button-greeting-div .greeting-action .main-button {
+    width: 100%;
   }
   .greeting-text {
-    font-size: 30px;
+    font-size: clamp(28px, 8vw, 34px);
     text-align: center;
   }
   .greeting-text-p {
@@ -153,12 +190,23 @@
   .greeting-main {
     display: block;
   }
+  .empty-div {
+    margin-bottom: 20px;
+  }
   .greeting-image-div {
-    height: 256px;
+    margin-top: 32px;
   }
   .profile-photo-frame {
-    width: 220px;
-    height: 220px;
+    width: min(220px, 68vw);
+    height: min(220px, 68vw);
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    margin-top: 2.75rem;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 }
 

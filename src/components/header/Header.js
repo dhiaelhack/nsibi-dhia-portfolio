@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Headroom from "react-headroom";
 import "./Header.scss";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
@@ -14,6 +14,7 @@ import {
 } from "../../portfolio";
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
   const viewExperience = workExperiences.display;
   const viewOpenSource = openSource.display;
   const viewSkills = skillsSection.display;
@@ -35,11 +36,23 @@ function Header() {
           type="checkbox"
           id="menu-btn"
           aria-label="Toggle navigation menu"
+          aria-expanded={menuOpen}
+          aria-controls="site-menu"
+          checked={menuOpen}
+          onChange={event => setMenuOpen(event.target.checked)}
         />
         <label className="menu-icon" htmlFor="menu-btn">
           <span className="navicon"></span>
         </label>
-        <ul className="menu">
+        <ul
+          className="menu"
+          id="site-menu"
+          onClick={event => {
+            if (event.target.closest("a")) {
+              setMenuOpen(false);
+            }
+          }}
+        >
           {viewSkills && (
             <li>
               <a href="#skills">Skills</a>
@@ -78,11 +91,8 @@ function Header() {
           <li>
             <a href="#contact">Contact Me</a>
           </li>
-          <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-            <a>
-              <ToggleSwitch />
-            </a>
+          <li className="menu-theme-toggle">
+            <ToggleSwitch />
           </li>
         </ul>
       </header>

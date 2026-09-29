@@ -13,6 +13,7 @@ export default function StartupProject() {
   const categories = [
     "All",
     "Web",
+    "Mobile",
     "DevSecOps",
     "AI",
     "Networking",
@@ -69,6 +70,8 @@ export default function StartupProject() {
                         src={project.image}
                         alt={project.projectName}
                         className="card-image"
+                        loading="lazy"
+                        decoding="async"
                       ></img>
                     </div>
                   ) : null}

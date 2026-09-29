@@ -1,70 +1,57 @@
 import React from "react";
 import "./Skills.scss";
-import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
-import {illustration, skillsSection} from "../../portfolio";
+import {skillsSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
-
-function renderSkill(skill) {
-  if (typeof skill !== "string") {
-    return skill;
-  }
-
-  return skill.split(/(\*\*.*?\*\*)/g).map((part, index) => {
-    if (part.startsWith("**") && part.endsWith("**")) {
-      return (
-        <strong key={index} className="skill-emphasis">
-          {part.slice(2, -2)}
-        </strong>
-      );
-    }
-    return part;
-  });
-}
 
 export default function Skills() {
   if (!skillsSection.display) {
     return null;
   }
+
   return (
     <div className="main" id="skills">
-      <div className="skills-main-div">
-        <Fade left duration={1000}>
-          <div className="skills-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={codingPerson} />
-            ) : (
-              <img
-                alt="Man Working"
-                src={require("../../assets/images/developerActivity.svg")}
-              ></img>
-            )}
-          </div>
-        </Fade>
-        <Fade right duration={1000}>
-          <div className="skills-text-div">
-            <h1 className="skills-heading">{skillsSection.title} </h1>
-            <p className="subTitle skills-text-subtitle">
-              {skillsSection.subTitle}
-            </p>
-            <SoftwareSkill />
-            <div>
-              {skillsSection.skills.map((skill, i) => {
-                return (
-                  <p
-                    key={i}
-                    className="subTitle skills-text glassmorphism"
-                    style={{padding: "15px", marginBottom: "10px"}}
-                  >
-                    {renderSkill(skill)}
-                  </p>
-                );
-              })}
+      <section className="what-i-do-section" aria-labelledby="skills-heading">
+        <Fade bottom duration={800} distance="20px">
+          <header className="skills-section-header">
+            <div className="skills-header-copy">
+              <p className="skills-eyebrow">CORE CAPABILITIES</p>
+              <h1 className="skills-heading" id="skills-heading">
+                {skillsSection.title}
+              </h1>
+              <p className="subTitle skills-text-subtitle">
+                {skillsSection.subTitle}
+              </p>
             </div>
-          </div>
+            <div className="skills-illustration" aria-hidden="true">
+              <DisplayLottie animationData={codingPerson} />
+            </div>
+          </header>
         </Fade>
-      </div>
+
+        <div className="skills-capability-grid">
+          {skillsSection.skills.map((skill, index) => (
+            <Fade bottom duration={700} distance="16px" key={skill.title}>
+              <article className="skills-capability-card glassmorphism">
+                <div className="skills-card-topline">
+                  <span className="skills-card-number">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <i className={skill.icon} aria-hidden="true"></i>
+                </div>
+                <h2>{skill.title}</h2>
+                <p className="subTitle">{skill.description}</p>
+                <ul className="skills-tool-list" aria-label="Technologies">
+                  {skill.tools.map(tool => (
+                    <li key={tool}>{tool}</li>
+                  ))}
+                </ul>
+              </article>
+            </Fade>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

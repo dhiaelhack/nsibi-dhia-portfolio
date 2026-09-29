@@ -45,23 +45,43 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "ENGINEERING STUDENT FOCUSED ON JAVA / FULL STACK DEVELOPMENT, CI/CD & LINUX SYSTEMS",
+    "FULL-STACK DEVELOPMENT · DEVSECOPS · LINUX & SYSTEMS · NETWORKING · AI",
   skills: [
-    emoji(
-      "⚡ Build full-stack applications with Java, Angular, Node.js and modern web frameworks"
-    ),
-    emoji(
-      "⚡ Develop and automate secure CI/CD pipelines with GitLab CI, Docker, SonarQube and OWASP ZAP"
-    ),
-    emoji(
-      "⚡ Design and implement Linux/POSIX systems programming — shells, IPC, process management"
-    ),
-    emoji(
-      "⚡ Design and emulate enterprise network architectures (MPLS/VPN, OSPF, BGP) and security monitoring platforms"
-    ),
-    emoji(
-      "⚡ Build AI-powered applications including RAG-based assistants and computer vision pipelines"
-    )
+    {
+      title: "Full-Stack Development",
+      icon: "fas fa-code",
+      description:
+        "Build complete web applications, from responsive interfaces to backend services and APIs.",
+      tools: ["Java", "Angular", "Node.js", "React"]
+    },
+    {
+      title: "DevSecOps & CI/CD",
+      icon: "fas fa-shield-alt",
+      description:
+        "Automate build and security checks to make software delivery more reliable.",
+      tools: ["GitLab CI", "Docker", "SonarQube", "OWASP ZAP"]
+    },
+    {
+      title: "Linux & Systems",
+      icon: "fab fa-linux",
+      description:
+        "Work close to the operating system with POSIX tools, process management, and IPC.",
+      tools: ["Linux", "C", "Bash", "POSIX"]
+    },
+    {
+      title: "Networks & Security",
+      icon: "fas fa-network-wired",
+      description:
+        "Design and emulate routed networks, VPN topologies, and security monitoring tools.",
+      tools: ["OSPF", "BGP", "MPLS/VPN", "GNS3"]
+    },
+    {
+      title: "AI & Computer Vision",
+      icon: "fas fa-brain",
+      description:
+        "Explore document question answering and image recognition through practical applications.",
+      tools: ["LangChain", "Pinecone", "TensorFlow", "OpenCV"]
+    }
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -170,27 +190,6 @@ const educationInfo = {
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Full Stack Development (Java / JS / Angular)", //Insert stack or technology you have experience in
-      progressPercentage: "80%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "DevOps & CI/CD (GitLab CI, Docker, SonarQube)",
-      progressPercentage: "80%"
-    },
-    {
-      Stack: "Networks, Systems & Cybersecurity",
-      progressPercentage: "75%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section, defaults to false
-};
-
 // Work experience section
 
 const workExperiences = {
@@ -246,15 +245,15 @@ const bigProjects = {
   subtitle: "SOME OF THE PROJECTS I'VE WORKED ON",
   projects: [
     {
-      image: require("./assets/images/Huginn Watch.jpeg"),
+      image: require("./assets/images/Huginn Watch.webp"),
       projectName: "HuginnWatch — Network & Server Security Monitoring",
       category: ["Networking", "DevSecOps"],
       projectDesc:
         "Designed and evaluated a FastAPI/Streamlit monitoring platform with vulnerability scanning (Nmap), alerting, and telemetry-based anomaly detection.",
-      footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack"}]
+      footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack/HuginnWatch"}]
     },
     {
-      image: require("./assets/images/Agentic RAG Assistant.jpg"),
+      image: require("./assets/images/Agentic RAG Assistant.webp"),
       projectName: "Agentic RAG Assistant",
       category: ["AI"],
       projectDesc:
@@ -262,23 +261,23 @@ const bigProjects = {
       footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack"}]
     },
     {
-      image: require("./assets/images/VPN-MPLS Network Architecture.jpeg"),
+      image: require("./assets/images/VPN-MPLS Network Architecture.webp"),
       projectName: "VPN-MPLS Network Architecture",
       category: ["Networking"],
       projectDesc:
         "Designed and emulated a multi-site MPLS/VPN backbone using GNS3, Docker, and FRRouting; configured OSPF, BGP, and MP-BGP, and validated routing and label switching.",
-      footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack"}]
+      footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack/sotulub-network"}]
     },
     {
-      image: require("./assets/images/DevSecOps .jpeg"),
+      image: require("./assets/images/DevSecOps .webp"),
       projectName: "Secure DevSecOps CI/CD Pipeline",
       category: ["Web", "DevSecOps"],
       projectDesc:
         "Developed a full-stack platform with an automated GitLab CI/Docker pipeline integrating SonarQube and OWASP ZAP for code quality and security-risk assessment.",
-      footerLink: [{name: "GitLab", url: "https://gitlab.com/nsibidhiaelhack"}]
+      footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack/devsecops_E-commerce_PS"}]
     },
     {
-      image: require("./assets/images/LAS-Shell.jpg"),
+      image: require("./assets/images/LAS-Shell.webp"),
       projectName: "LAS Shell — POSIX Unix Shell in C",
       category: ["DevSecOps"],
       projectDesc:
@@ -286,7 +285,7 @@ const bigProjects = {
       footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack"}]
     },
     {
-      image: require("./assets/images/Real-Time GSm.jpeg"),
+      image: require("./assets/images/Real-Time GSm.webp"),
       projectName: "Real-Time GSM/GPS Vehicle Tracking System",
       category: ["Hardware", "Networking"],
       projectDesc:
@@ -294,12 +293,22 @@ const bigProjects = {
       footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack"}]
     },
     {
-      image: require("./assets/images/Intelligent Facial Recognition Application.jpeg"),
+      image: require("./assets/images/Intelligent Facial Recognition Application.webp"),
       projectName: "Intelligent Facial Recognition Application",
       category: ["Web", "AI"],
       projectDesc:
         "Built a real-time facial detection and recognition pipeline using Flask, OpenCV, and TensorFlow, trained and tested on customized image data.",
-      footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack"}]
+      footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack/FaceRecog-WebApp"}]
+    },
+    {
+      image: require("./assets/images/FtourTounsi.webp"),
+      projectName: "Ftour Tounsi",
+      category: ["Mobile"],
+      projectDesc:
+        "Built a native Android application in Kotlin. The project includes the app source and Gradle build configuration.",
+      footerLink: [
+        {name: "GitHub", url: "https://github.com/dhiaelhack/FtourTounsiApp"}
+      ]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -405,7 +414,6 @@ export {
   splashScreen,
   skillsSection,
   educationInfo,
-  techStack,
   workExperiences,
   openSource,
   bigProjects,

@@ -22,6 +22,10 @@
   text-decoration: none;
 }
 
+.contact-detail-email {
+  overflow-wrap: anywhere;
+}
+
 .contact-detail:hover,
 .contact-detail-email:hover {
   color: var(--link);

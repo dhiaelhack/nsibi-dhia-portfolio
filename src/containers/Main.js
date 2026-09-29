@@ -11,7 +11,6 @@ import "./Main.scss";
 
 // Lazy loading below-the-fold components
 const Skills = lazy(() => import("./skills/Skills"));
-const StackProgress = lazy(() => import("./skillProgress/skillProgress"));
 const WorkExperience = lazy(() => import("./workExperience/WorkExperience"));
 const StartupProject = lazy(() => import("./StartupProjects/StartupProject"));
 const Achievement = lazy(() => import("./achievement/Achievement"));
@@ -65,7 +64,6 @@ const Main = () => {
               <Greeting />
               <Suspense fallback={fallbackLoader}>
                 <Skills />
-                <StackProgress />
                 <Education />
                 <WorkExperience />
                 <StartupProject />
