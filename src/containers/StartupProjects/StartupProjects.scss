@@ -106,13 +106,26 @@
   transform: translateY(-1px);
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .projects-container {
     grid-template-columns: minmax(0, 1fr);
+    width: 100%;
+    min-width: 0;
   }
 
   .project-card {
     padding: 1rem;
+    min-width: 0;
+  }
+
+  .project-image,
+  .project-detail {
+    min-width: 0;
+  }
+
+  .card-title,
+  .card-subtitle {
+    overflow-wrap: anywhere;
   }
 
   .project-filters {
