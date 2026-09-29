@@ -248,6 +248,7 @@ const bigProjects = {
     {
       image: require("./assets/images/Huginn Watch.jpeg"),
       projectName: "HuginnWatch — Network & Server Security Monitoring",
+      category: ["Networking", "DevSecOps"],
       projectDesc:
         "Designed and evaluated a FastAPI/Streamlit monitoring platform with vulnerability scanning (Nmap), alerting, and telemetry-based anomaly detection.",
       footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack"}]
@@ -255,6 +256,7 @@ const bigProjects = {
     {
       image: require("./assets/images/Agentic RAG Assistant.jpg"),
       projectName: "Agentic RAG Assistant",
+      category: ["AI"],
       projectDesc:
         "Developed a LangChain ReAct-based document question-answering system; investigated retrieval quality, agent tool usage, and failure modes using Pinecone and LangSmith.",
       footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack"}]
@@ -262,6 +264,7 @@ const bigProjects = {
     {
       image: require("./assets/images/VPN-MPLS Network Architecture.jpeg"),
       projectName: "VPN-MPLS Network Architecture",
+      category: ["Networking"],
       projectDesc:
         "Designed and emulated a multi-site MPLS/VPN backbone using GNS3, Docker, and FRRouting; configured OSPF, BGP, and MP-BGP, and validated routing and label switching.",
       footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack"}]
@@ -269,6 +272,7 @@ const bigProjects = {
     {
       image: require("./assets/images/DevSecOps .jpeg"),
       projectName: "Secure DevSecOps CI/CD Pipeline",
+      category: ["Web", "DevSecOps"],
       projectDesc:
         "Developed a full-stack platform with an automated GitLab CI/Docker pipeline integrating SonarQube and OWASP ZAP for code quality and security-risk assessment.",
       footerLink: [{name: "GitLab", url: "https://gitlab.com/nsibidhiaelhack"}]
@@ -276,6 +280,7 @@ const bigProjects = {
     {
       image: require("./assets/images/LAS-Shell.jpg"),
       projectName: "LAS Shell — POSIX Unix Shell in C",
+      category: ["DevSecOps"],
       projectDesc:
         "Implemented a POSIX-compliant Unix shell in C under Linux: process management, IPC, pipelines, I/O redirection, signals, background jobs, command history and aliases.",
       footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack"}]
@@ -283,6 +288,7 @@ const bigProjects = {
     {
       image: require("./assets/images/Real-Time GSm.jpeg"),
       projectName: "Real-Time GSM/GPS Vehicle Tracking System",
+      category: ["Hardware", "Networking"],
       projectDesc:
         "Designed an embedded vehicle-tracking system using GSM/GPS modules (SIM800L), secure position transmission, live mapping, and trip history.",
       footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack"}]
@@ -290,6 +296,7 @@ const bigProjects = {
     {
       image: require("./assets/images/Intelligent Facial Recognition Application.jpeg"),
       projectName: "Intelligent Facial Recognition Application",
+      category: ["Web", "AI"],
       projectDesc:
         "Built a real-time facial detection and recognition pipeline using Flask, OpenCV, and TensorFlow, trained and tested on customized image data.",
       footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack"}]
