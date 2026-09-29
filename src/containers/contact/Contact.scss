@@ -4,10 +4,6 @@
   display: flex;
 }
 
-.dark-mode a {
-  color: $textColorDark;
-}
-
 .contact-div-main > * {
   flex: 1;
 }
@@ -28,9 +24,8 @@
 
 .contact-detail:hover,
 .contact-detail-email:hover {
-  color: $textColor;
-  text-shadow: 2px 1px 2px $contactDetailHoverTS;
-  transition: all 0.3s;
+  color: var(--link);
+  transition: color 160ms ease;
 }
 
 .contact-subtitle {

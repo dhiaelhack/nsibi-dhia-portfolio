@@ -7,7 +7,7 @@ export default function TalkCard({talkDetails}) {
       <div className="container">
         <div
           className={
-            talkDetails.isDark ? "dark-rectangle rectangle" : "rectangle"
+            "rectangle"
           }
         >
           <div className="diagonal-fill"></div>

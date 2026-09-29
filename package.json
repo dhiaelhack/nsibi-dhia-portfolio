@@ -15,8 +15,11 @@
     "react-reveal": "^1.2.2",
     "react-scripts": "^5.0.1",
     "react-test-renderer": "^16.10.2",
+    "react-tsparticles": "^2.12.2",
     "react-twitter-embed": "3.0.3",
-    "sass": "^1.32.8"
+    "sass": "^1.32.8",
+    "tsparticles": "^4.4.0",
+    "tsparticles-slim": "^2.12.0"
   },
   "scripts": {
     "start": "node fetch.js && react-scripts start",
@@ -52,4 +55,3 @@
     "prettier": "^2.3.1"
   }
 }
-	

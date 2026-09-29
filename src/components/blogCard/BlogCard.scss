@@ -1,9 +1,5 @@
 @import "../../_globalColor";
 
-.small-dark {
-  color: $textColorDark !important;
-}
-
 .blog-container {
   border-radius: 10px;
   color: $blogCardContainerColor;
@@ -58,7 +54,7 @@
 .go-arrow {
   margin-top: -4px;
   margin-right: -4px;
-  color: $textColorDark;
+  color: $textOnAccent;
   font-family: courier, sans;
 }
 
@@ -99,7 +95,7 @@
 
 .blog-card:hover > h3 {
   transition: all 0.3s ease-out;
-  color: $darkBoxShadow2;
+  color: $textOnAccent;
 }
 
 @media screen and (max-width: 480px) and (min-width: 300px),

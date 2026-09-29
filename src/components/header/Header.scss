@@ -7,17 +7,17 @@
 
 /* header */
 
-.dark-menu {
-  background-color: $darkBackground !important;
-  color: $textColorDark;
+.app-shell.theme-dark .header li a {
+  color: var(--text-primary);
 }
 
-.dark-menu li a {
-  color: $textColorDark !important;
+.app-shell.theme-dark .header li a:hover {
+  background-color: $buttonColor;
+  color: $textOnAccent;
 }
 
-.dark-menu li a:hover {
-  background-color: $buttonColor !important;
+.header li a:focus-visible {
+  outline-offset: -3px;
 }
 
 .header {
@@ -96,24 +96,9 @@
   width: 18px;
 }
 
-.header .menu-icon .navicon-dark {
-  background: $textColorDark;
-}
-
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
   background: $iconBackground;
-  content: "";
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all 0.2s ease-out;
-  width: 100%;
-}
-
-.header .menu-icon .navicon-dark:before,
-.header .menu-icon .navicon-dark:after {
-  background: $textColorDark !important;
   content: "";
   display: block;
   height: 100%;
@@ -133,7 +118,19 @@
 /* menu btn */
 
 .header .menu-btn {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.header .menu-btn:focus-visible + .menu-icon {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 2px;
 }
 
 .header .menu-btn:checked ~ .menu {

@@ -9,7 +9,7 @@
 }
 
 .icon-button i {
-  color: $textColorDark;
+  color: #ffffff;
   border-radius: 2.6rem;
   cursor: pointer;
   display: inline-block;
@@ -28,6 +28,15 @@
   transition: 0.2s ease-in;
 }
 
+.linkedin i,
+.gitlab i,
+.google i,
+.twitter i,
+.stack-overflow i,
+.kaggle i {
+  color: var(--text-on-accent);
+}
+
 .facebook i {
   background-color: $faceBook;
 }
@@ -37,7 +46,7 @@
 }
 
 .github i {
-  background-color: $github;
+  background-color: #172b3a;
 }
 
 .gitlab i {
@@ -53,7 +62,7 @@
 }
 
 .medium i {
-  background-color: $medium;
+  background-color: #172b3a;
 }
 
 .stack-overflow i {
@@ -80,6 +89,11 @@
 .kaggle i:hover,
 .medium i:hover {
   background-color: $textColor;
+}
+
+.icon-button:focus-visible {
+  outline-offset: 4px;
+  border-radius: 2.6rem;
 }
 
 /* Media Query */

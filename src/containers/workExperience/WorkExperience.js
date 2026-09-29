@@ -1,12 +1,10 @@
-import React, {useContext} from "react";
+import React from "react";
 import "./WorkExperience.scss";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard";
 import {workExperiences} from "../../portfolio";
 import {Fade} from "react-reveal";
-import StyleContext from "../../contexts/StyleContext";
 
 export default function WorkExperience() {
-  const {isDark} = useContext(StyleContext);
   if (workExperiences.display) {
     return (
       <div id="experience">
@@ -19,7 +17,6 @@ export default function WorkExperience() {
                   return (
                     <ExperienceCard
                       key={i}
-                      isDark={isDark}
                       cardInfo={{
                         company: card.company,
                         desc: card.desc,

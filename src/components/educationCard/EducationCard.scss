@@ -32,12 +32,11 @@
 
 .education-text-school {
   margin: 0;
+  color: var(--text-primary);
   font-size: 28px;
   font-weight: 700;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  height: 27px;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
 }
 
 .education-roundedimg {
@@ -51,6 +50,7 @@
 
 .education-card-right {
   max-width: 70%;
+  min-width: 0;
 }
 
 .education-text-subHeader {
@@ -97,7 +97,6 @@
   }
   .education-text-school {
     font-size: 20px;
-    height: 23px;
   }
   .education-text-duration {
     font-size: 16px;

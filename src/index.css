@@ -29,6 +29,163 @@ body {
   font: 19px / 1.6 "Space Grotesk", "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+:root {
+  color-scheme: light;
+  --bg-primary: #f8fafc;
+  --bg-secondary: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-raised: #e2e8f0;
+  --text-primary: #1e293b;
+  --text-secondary: #334155;
+  --text-muted: #5b6b7e;
+  --text-on-accent: #07141a;
+  --border-color: rgba(100, 116, 139, 0.2);
+  --border-strong: #94a3b8;
+  --accent: #0ea5e9;
+  --accent-hover: #0284c7;
+  --link: #036a9d;
+  --shadow: 0 8px 28px rgba(23, 43, 58, 0.08);
+  --shadow-color: rgba(0, 0, 0, 0.15);
+  --shadow-hover: 0 18px 42px rgba(23, 43, 58, 0.15);
+  --glass-bg: rgba(255, 255, 255, 0.88);
+  --glass-border: rgba(23,  43, 58, 0.12);
+  --focus-ring: rgba(14, 165, 233, 0.58);
+  --ambient-primary: rgba(14, 165, 233, 0.12);
+  --ambient-secondary: rgba(99, 102, 241, 0.08);
+  --grid-line: rgba(51, 65, 85, 0.055);
+}
+
+.app-shell.theme-dark {
+  color-scheme: dark;
+  --bg-primary: #0d1520;
+  --bg-secondary: #131f2d;
+  --bg-card: #172535;
+  --bg-raised: #1d3042;
+  --text-primary: #e8f0f6;
+  --text-secondary: #c3d1dc;
+  --text-muted: #a2b4c3;
+  --text-on-accent: #08202d;
+  --border-color: #2b4052;
+  --border-strong: #3a566d;
+  --accent: #38bdf8;
+  --accent-hover: #7dd3fc;
+  --link: #7dd3fc;
+  --shadow: 0 14px 36px rgba(0, 0, 0, 0.24);
+  --shadow-color: rgba(0, 0, 0, 0.28);
+  --shadow-hover: 0 18px 42px rgba(0, 0, 0, 0.34);
+  --glass-bg: rgba(19, 31, 45, 0.88);
+  --glass-border: rgba(148, 180, 202, 0.2);
+  --focus-ring: rgba(56, 189, 248, 0.62);
+  --ambient-primary: rgba(56, 189, 248, 0.15);
+  --ambient-secondary: rgba(129, 140, 248, 0.09);
+  --grid-line: rgba(148, 163, 184, 0.045);
+  background-color: var(--bg-primary);
+}
+
+.app-shell {
+  position: relative;
+  isolation: isolate;
+  min-height: 100vh;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+.app-shell::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    radial-gradient(ellipse 58% 48% at 12% 4%, var(--ambient-primary), transparent 76%),
+    radial-gradient(ellipse 46% 42% at 88% 22%, var(--ambient-secondary), transparent 78%),
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px),
+    radial-gradient(var(--grid-line) 1px, transparent 1.5px);
+  background-size: auto, auto, 96px 96px, 96px 96px, 24px 24px;
+  mask-image: radial-gradient(ellipse at 50% 18%, #000 18%, rgba(0, 0, 0, 0.72) 58%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse at 50% 18%, #000 18%, rgba(0, 0, 0, 0.72) 58%, transparent 100%);
+}
+
+.network-background-layer {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.network-particles {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.app-content {
+  position: relative;
+  z-index: 1;
+}
+
+*,
+*::before,
+*::after {
+  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.section-loader {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  color: var(--link);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+::selection {
+  color: var(--text-on-accent);
+  background: var(--accent);
+}
+
+a {
+  color: var(--link);
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus-ring);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .network-background-layer {
+    display: none;
+  }
 }
 
 /* Headings use Archivo */

@@ -3,7 +3,7 @@
 .main-button {
   background-color: $buttonColor;
   border: solid 1px $buttonColor;
-  color: $textColorDark;
+  color: $textOnAccent;
   font-weight: 700;
   width: max-content;
   padding: 13px 22px;
@@ -20,9 +20,12 @@
 }
 .main-button:hover {
   background-color: $darkBoxShadow2;
-  color: $buttonColor;
+  color: $titleColor;
   transition: all 0.3s ease 0s;
   transform: translateY(-3px);
+}
+.main-button:focus-visible {
+  outline-offset: 4px;
 }
 .project-button {
   display: flex;

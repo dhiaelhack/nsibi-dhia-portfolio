@@ -25,29 +25,46 @@
   border-radius: 10px;
   border: 1px solid $lightBorder1;
   justify-content: center;
-}
-.project-card-light {
+  color: $textColor;
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.project-card-dark {
-  box-shadow: 0px 10px 30px -15px $darkBoxShadow;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.25s ease;
+  transition: box-shadow 180ms ease, border-color 180ms ease, transform 180ms ease;
 }
 
 .project-detail {
   text-align: center;
 }
-.project-card-light:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+.project-card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-2px);
 }
-.project-card-dark:hover {
-  box-shadow: 0px 20px 30px -10px $darkBoxShadow;
+
+.project-filters {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin: 20px 0 40px;
+}
+
+.project-filter {
+  padding: 8px 20px;
+  border: 1px solid $lightBorder1;
+  border-radius: 30px;
+  background: transparent;
+  color: $textColor;
+  cursor: pointer;
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, transform 180ms ease;
+}
+
+.project-filter:hover,
+.project-filter.is-active {
+  border-color: $buttonColor;
+  color: $titleColor;
+  background: $lightBackground2;
+}
+
+.project-filter:hover {
+  transform: translateY(-1px);
 }
 .project-image {
   position: relative;
@@ -64,22 +81,33 @@
   gap: 1rem 1rem;
 }
 
-.project-card-footer span.project-tag {
+.project-card-footer a.project-tag {
   background: $buttonColor;
-  color: $lightBackground3;
+  color: $textOnAccent;
+  text-decoration: none;
   vertical-align: middle;
   align-items: center;
   border-radius: 4px;
   display: inline-flex;
   font-size: 0.75rem;
-  height: 2em;
+  min-height: 2em;
   justify-content: center;
   white-space: nowrap;
   line-height: 1.5;
   margin: 0 0.5rem 0.5rem 0;
   padding: 0 0.75em;
-  cursor: pointer;
-  transition: 0.2s ease-in;
+  transition: background-color 180ms ease, transform 180ms ease;
+}
+
+.project-card-footer a.project-tag:hover {
+  background: $buttonHover;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 480px) {
+  .projects-container {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 @media (max-width: 768px) {

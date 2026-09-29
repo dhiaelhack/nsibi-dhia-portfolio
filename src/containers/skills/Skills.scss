@@ -28,6 +28,10 @@
   color: $subTitle;
 }
 
+.skill-emphasis {
+  color: $skillsColor;
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .skills-heading {

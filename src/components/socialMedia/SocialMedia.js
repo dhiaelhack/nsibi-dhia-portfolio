@@ -11,6 +11,7 @@ export default function socialMedia() {
       {socialMediaLinks.github ? (
         <a
           href={socialMediaLinks.github}
+          aria-label="GitHub profile"
           className="icon-button github"
           target="_blank"
           rel="noopener noreferrer"
@@ -23,6 +24,7 @@ export default function socialMedia() {
       {socialMediaLinks.linkedin ? (
         <a
           href={socialMediaLinks.linkedin}
+          aria-label="LinkedIn profile"
           className="icon-button linkedin"
           target="_blank"
           rel="noopener noreferrer"
@@ -35,6 +37,7 @@ export default function socialMedia() {
       {socialMediaLinks.gmail ? (
         <a
           href={`mailto:${socialMediaLinks.gmail}`}
+          aria-label="Send an email"
           className="icon-button google"
           target="_blank"
           rel="noopener noreferrer"
@@ -47,6 +50,7 @@ export default function socialMedia() {
       {socialMediaLinks.gitlab ? (
         <a
           href={socialMediaLinks.gitlab}
+          aria-label="GitLab profile"
           className="icon-button gitlab"
           target="_blank"
           rel="noopener noreferrer"

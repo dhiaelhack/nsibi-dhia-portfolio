@@ -2,95 +2,81 @@
 Certain colors are used for different and multiply types of elements. 
 For greater control over colors visit each components .scss file. */
 
-/* 
-  Design System: UI/UX Pro Max — "Code dark + run green"
-  Style:    Vibrant & Block-based | Dark professional portfolio
-  Primary:  #1E293B  | Secondary: #334155
-  CTA:      #22C55E  | Background: #0F172A  | Text: #F8FAFC
-  Fonts:    Archivo (headings) + Space Grotesk (body)
-*/
+/* Shared semantic roles resolve to the current theme's CSS variables. */
 
 // button colors
-$buttonColor: #22C55E;
-$buttonHover: #16A34A;
-$topButtonHover: #22C55E;
+$buttonColor: var(--accent);
+$buttonHover: var(--accent-hover);
+$topButtonHover: var(--accent-hover);
 
-// text colors light theme
-$titleColor: #1E293B;
-$textColor: #334155;
-$subTitle: #64748B;
-$cardSubtitle: #64748B;
-$talkCardSubTitle: #94A3B8;
-$blogCardTitleColor: #1E293B;
+// Text roles
+$titleColor: var(--text-primary);
+$textColor: var(--text-secondary);
+$subTitle: var(--text-muted);
+$cardSubtitle: var(--text-secondary);
+$talkCardSubTitle: var(--text-secondary);
+$blogCardTitleColor: var(--text-primary);
 
-// text color dark theme
-$textColorDark: #F8FAFC;
+$textOnAccent: var(--text-on-accent);
 
 // toggle switch colors
-$toggleCheck: #22C55E;
-$toggleSwitchSliderBG: #334155;
+$toggleCheck: var(--accent);
+$toggleSwitchSliderBG: var(--bg-raised);
 
 // githubRepo specific colors
-$githubRepoCardLanguageColorBG: #22C55E;
-$githubRepoCardColor: #94A3B8;
-$githubRepoCardRepoCardStatsColor: #94A3B8;
-$githubRepoCardRepoNameColor: #F8FAFC;
-$githubProfileCardLocationTS: #334155;
-$githubProfileCardBorder: #22C55E;
+$githubRepoCardLanguageColorBG: #0ea5e9;
+$githubRepoCardColor: var(--text-secondary);
+$githubRepoCardRepoCardStatsColor: var(--text-muted);
+$githubRepoCardRepoNameColor: var(--text-primary);
+$githubProfileCardLocationTS: var(--text-secondary);
+$githubProfileCardBorder: var(--accent);
 
 // light background colors
-$lightBackground1: #F8FAFC;
-$lightBackground2: #F1F5F9;
-$lightBackground3: #E2E8F0;
-$blogCardContainerColor: #64748B;
+$lightBackground1: var(--bg-card);
+$lightBackground2: var(--bg-secondary);
+$blogCardContainerColor: var(--text-secondary);
 
-// dark background colors
-$darkBackground: #0F172A;
+// dark background colors (Deep Dark)
+$darkBackground: var(--bg-card);
 
 // light theme box shadows
-$lightBoxShadowDark: rgba(0, 0, 0, 0.15);
-$lightBoxShadow: rgba(0, 0, 0, 0.08);
-$lightBoxShadowDarker: rgba(0, 0, 0, 0.25);
+$lightBoxShadowDark: var(--shadow-color);
+$lightBoxShadow: var(--shadow-color);
+$lightBoxShadowDarker: var(--shadow-color);
 
-// dark theme box shadows
-$darkBoxShadow: #1E293B;
-$darkBoxShadow2: #334155;
+// dark theme box shadows (for bento cards / glassmorphism)
+$darkBoxShadow: var(--shadow-color);
+$darkBoxShadow2: var(--bg-raised);
 
-// linear gradients
-$experienceCardBlurredDivLG: linear-gradient(
-  rgba(15, 23, 42, 0.6),
-  rgba(15, 23, 42, 0.3)
-);
-$experienceCardBannerLG: linear-gradient(
-  rgba(15, 23, 42, 0.85),
-  rgba(30, 41, 59, 0.6)
-);
+// linear gradients (Glassmorphic)
+$experienceCardBlurredDivLG: linear-gradient(rgba(19, 31, 45, 0.78), rgba(19, 31, 45, 0.35));
+$experienceCardBannerLG: linear-gradient(rgba(19, 31, 45, 0.9), rgba(19, 31, 45, 0.58));
 
 // borders
-$progressBarBackground: #E2E8F0;
-$lightBorder1: rgba(100, 116, 139, 0.2);
-$educationCardBorder: #22C55E;
+$progressBarBackground: var(--bg-raised);
+$lightBorder1: var(--border-color);
+$educationCardBorder: var(--accent);
 
 // hovers
-$achievementCertificateCardHoverDark: rgba(34, 197, 94, 0.15);
-$blogCardHoverSmallColor: rgba(248, 250, 252, 0.9);
-$headerHoverBG: #1E293B;
-$contactDetailHoverTS: #22C55E;
+$achievementCertificateCardHoverDark: var(--shadow-color);
+$blogCardHoverSmallColor: var(--text-on-accent);
+$headerHoverBG: var(--bg-raised);
+$contactDetailHoverTS: var(--accent);
 
 // misc backgrounds
-$progressBarSpanBG: #22C55E;
-$iconBackground: #1E293B;
-$appHeaderBG: #0F172A;
+$progressBarSpanBG: var(--accent);
+$iconBackground: var(--text-primary);
+$appHeaderBG: var(--glass-bg);
 
 // misc colors
-$skillsColor: #22C55E;
-$appLink: #22C55E;
+$skillsColor: var(--accent);
+$appLink: var(--link);
 
 // social media icons
 $faceBook: #3b5998;
-$linkedin: #0e76a8;
+$linkedin: #0ea5e9;
 $github: #F8FAFC;
-$gitlab: #fca326;
+$gitlab: #0ea5e9;
 $google: #ea4335;
 $twitter: #1da1f2;
 $medium: #F8FAFC;

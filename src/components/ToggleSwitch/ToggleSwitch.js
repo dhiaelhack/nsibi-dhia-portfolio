@@ -12,6 +12,7 @@ const ToggleSwitch = () => {
     <label className="switch">
       <input
         type="checkbox"
+        aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
         checked={isDark}
         onChange={() => {
           styleContext.changeTheme();

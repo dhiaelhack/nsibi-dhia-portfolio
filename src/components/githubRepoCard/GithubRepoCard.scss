@@ -68,6 +68,7 @@
 
 .repo-star-svg {
   margin-right: 0.3rem;
+  fill: var(--text-muted);
 }
 
 .repo-description {
@@ -77,19 +78,25 @@
   -webkit-box-orient: vertical;
 }
 
-.dark-card-mode {
-  background-color: $darkBackground;
-  color: $textColorDark;
-}
-.dark-card-mode p {
-  color: $textColorDark;
+.repo-svg {
+  color: var(--text-secondary);
 }
 
-.dark-card-mode .repo-svg {
-  fill: $textColorDark;
+.repo-svg path {
+  fill: currentColor;
 }
 
-.dark-card-mode:hover {
-  background-color: $buttonColor !important;
+.repo-card-div:hover {
+  background-color: var(--bg-raised);
   box-shadow: 0px 0px 16px $darkBoxShadow;
+}
+
+.repo-card-div:hover,
+.repo-card-div:hover p,
+.repo-card-div:hover .repo-svg {
+  color: var(--text-primary);
+}
+
+.repo-card-div:hover .repo-star-svg {
+  fill: var(--text-primary);
 }
