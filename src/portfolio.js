@@ -250,7 +250,9 @@ const bigProjects = {
       category: ["Networking", "DevSecOps"],
       projectDesc:
         "Designed and evaluated a FastAPI/Streamlit monitoring platform with vulnerability scanning (Nmap), alerting, and telemetry-based anomaly detection.",
-      footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack/HuginnWatch"}]
+      footerLink: [
+        {name: "GitHub", url: "https://github.com/dhiaelhack/HuginnWatch"}
+      ]
     },
     {
       image: require("./assets/images/Agentic RAG Assistant.webp"),
@@ -266,7 +268,9 @@ const bigProjects = {
       category: ["Networking"],
       projectDesc:
         "Designed and emulated a multi-site MPLS/VPN backbone using GNS3, Docker, and FRRouting; configured OSPF, BGP, and MP-BGP, and validated routing and label switching.",
-      footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack/sotulub-network"}]
+      footerLink: [
+        {name: "GitHub", url: "https://github.com/dhiaelhack/sotulub-network"}
+      ]
     },
     {
       image: require("./assets/images/DevSecOps .webp"),
@@ -274,7 +278,12 @@ const bigProjects = {
       category: ["Web", "DevSecOps"],
       projectDesc:
         "Developed a full-stack platform with an automated GitLab CI/Docker pipeline integrating SonarQube and OWASP ZAP for code quality and security-risk assessment.",
-      footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack/devsecops_E-commerce_PS"}]
+      footerLink: [
+        {
+          name: "GitHub",
+          url: "https://github.com/dhiaelhack/devsecops_E-commerce_PS"
+        }
+      ]
     },
     {
       image: require("./assets/images/LAS-Shell.webp"),
@@ -298,7 +307,9 @@ const bigProjects = {
       category: ["Web", "AI"],
       projectDesc:
         "Built a real-time facial detection and recognition pipeline using Flask, OpenCV, and TensorFlow, trained and tested on customized image data.",
-      footerLink: [{name: "GitHub", url: "https://github.com/dhiaelhack/FaceRecog-WebApp"}]
+      footerLink: [
+        {name: "GitHub", url: "https://github.com/dhiaelhack/FaceRecog-WebApp"}
+      ]
     },
     {
       image: require("./assets/images/FtourTounsi.webp"),

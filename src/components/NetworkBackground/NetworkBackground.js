@@ -48,7 +48,7 @@ const NetworkBackground = ({isDark}) => {
             },
             grab: {
               distance: 150,
-            links: {
+              links: {
                 opacity: isDark ? 0.38 : 0.58
               }
             },
